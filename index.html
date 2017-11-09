@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>React Coding Katas</title>
+    <link href="./lib/reveal.js-3.5.0/css/reveal.css" type="text/css" rel="stylesheet" />
+    <link href="./lib/reveal.js-3.5.0/css/theme/white.css" type="text/css" rel="stylesheet" />
+    <link href="./lib/reveal.js-3.5.0/lib/css/zenburn.css" type="text/css" rel="stylesheet" />
+    <style>
+      * {
+        font-weight: 500 !important;
+        text-transform: none !important;
+      }
+      pre {
+        box-shadow: none !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>React Coding Katas</h1>
+          <h2>or how I became a better developer.</h2>
+        </section>
+
+        <section>
+          <h1>Karate Katas</h1>
+          <img src="./assets/karate.gif" alt="Image of Karate Kata" />
+        </section>
+
+        <section>
+          <h1>Fizz Buzz</h1>
+          <pre>
+            <code class="js">
+              for (let i = 1; i <= 100; i++) {
+                if (i % 15 === 0) {
+                  console.log("FizzBuzz");
+                } else if (i % 3 === 0) {
+                  console.log("Fizz");
+                } else if (i % 5 === 0) {
+                  console.log("Buzz");
+                } else {
+                  console.log(i);
+                }
+              }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <img src="./assets/jordan.gif" alt="Michael Jordan hitting a game winning shot" />
+        </section>
+
+        <section>
+          <img src="./assets/sleeping.gif" alt="Bear cub falling asleep" />
+        </section>
+
+        <section>
+          <h1>So Good They Can't Ignore You</h1>
+          <h2>Cal Newport</h2>
+        </section>
+
+        <section>
+          <span>Obligatory Code Snippet #1</span>
+          <pre>
+            <code class="js">
+              function classNames () {
+                // ...
+                var inner = classNames.apply(null, arg);
+                // ...
+                if (hasOwn.call(arg, key) && arg[key]) {
+                // ...
+              }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <span>Obligatory Code Snippet #2</span>
+          <pre>
+            <code class="js">
+              class Base extends Component {
+                constructor() {
+                  super();
+
+                  this.state = {
+                    online: navigator.onLine,
+                  };
+                  // ...
+                }
+                // No render method!
+              }
+
+              export class Online extends Base {
+                render() {
+                  return this.state.online ? this.renderChildren() : null;
+                }
+              }
+
+              export class Offline extends Base {
+                render() {
+                  return !this.state.online ? this.renderChildren() : null;
+                }
+              }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <blockquote>
+            to learn and not to do is really not to learn.
+          </blockquote>
+          <p>- Steph R. Covey</p>
+        </section>
+
+        <section>
+          <ul style="font-size:24px">
+            <li>React</li>
+            <li>Canvas</li>
+            <li>GraphQL</li>
+            <li>Machine Learning</li>
+            <li>Cryptocurrency</li>
+            <li>Artifical Intelligence</li>
+            <li>Haskell</li>
+            <li>Architect</li>
+            <li>Elm</li>
+            <li>Vue</li>
+            <li>Angular</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Designer</li>
+            <li>Mongo</li>
+            <li>Data Scientist</li>
+            <li>Project Manager</li>
+            <li>Baker</li>
+            <li>Cloud and Distributed Computing Ninja</li>
+            <li>Personal trainer</li>
+            <li>Database admin</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Peak</h1>
+          <h2>Anders Ericsson</h2>
+        </section>
+
+        <section>
+          <h1>To teach is to know</h1>
+        </section>
+
+        <section>
+          <h1>Thanks</h1>
+
+          <pre>
+            <code>
+              npm install --save anthonyng
+            </code>
+          </pre>
+        </section>
+      </div>
+    </div>
+
+    <script src="./lib/reveal.js-3.5.0/lib/js/head.min.js"></script>
+    <script src="./lib/reveal.js-3.5.0/js/reveal.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      Reveal.initialize({
+        dependencies: [
+          { src: './lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        ]
+      });
+    </script>
+  </body>
+</html>
